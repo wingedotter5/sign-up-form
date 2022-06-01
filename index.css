@@ -1,3 +1,8 @@
+:root {
+  --brand-offset: 15vh;
+  --brand-height: 150px;
+}
+
 @font-face {
   font-family: "Norse Bold";
   src: url("/assets/Norse-Bold.otf");
@@ -5,6 +10,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -25,10 +31,10 @@
 
 .brand-container {
   width: 100%;
-  height: 150px;
+  height: var(--brand-height);
 
   position: absolute;
-  top: 15vh;
+  top: var(--brand-offset);
   
   color: white;
   background-color: rgba(5, 5, 5, 0.5);
@@ -59,4 +65,77 @@
 
 .credits a:link, a:visited {
   color: white;
+}
+
+.form-container {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: calc(var(--brand-offset) + var(--brand-height));
+  width: 65vw;
+}
+
+.form-controls {
+  padding: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-row {
+  margin-bottom: 24px;
+
+  display: flex;
+  column-gap: 40px;
+  width: 70%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.form-control input {
+  padding: 12px 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-footer {
+  margin: 40px 0 0 40px;
+}
+
+.form-footer p {
+  font-size: 18px;
+}
+
+.form-footer button {
+  font-size: large;
+
+  color: white;
+  background-color: #596D48;
+  
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  
+  padding: 15px 30px;
+  margin-bottom: 24px;
+}
+
+.form-footer a:link,
+.form-footer a:visited {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
 }
