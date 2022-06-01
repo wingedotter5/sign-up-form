@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("/assets/Norse-Bold.otf");
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.background {
+  width: 35vw;
+  height: 100vh;
+
+  background-image: url("/assets/background.jpg");
+  
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.brand-container {
+  width: 100%;
+  height: 150px;
+
+  position: absolute;
+  top: 15vh;
+  
+  color: white;
+  background-color: rgba(5, 5, 5, 0.5);
+  
+  padding: 20px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-container .brand-logo {
+  height: 100%;
+}
+
+.brand-container .brand-title {
+  font-family: "Norse Bold";
+  font-size: 75px;
+}
+
+.credits {
+  background-color: rgba(5, 5, 5, 0.5);
+  color: white;
+
+  position: absolute;
+  bottom: 10px;
+}
+
+.credits a:link, a:visited {
+  color: white;
+}
