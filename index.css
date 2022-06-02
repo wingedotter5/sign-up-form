@@ -140,3 +140,20 @@ form {
   font-weight: bold;
   text-decoration: none;
 }
+
+#password-match {
+  visibility: hidden;
+}
+
+input:focus {
+  border-color: lightblue;
+}
+
+.invalid {
+  border-color: red !important;
+}
+
+.error {
+  color: red;
+  visibility: visible !important;
+}
