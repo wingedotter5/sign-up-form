@@ -1,6 +1,7 @@
 :root {
   --brand-offset: 15vh;
   --brand-height: 150px;
+  font-family: sans-serif;
 }
 
 @font-face {
