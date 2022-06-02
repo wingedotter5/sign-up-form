@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Norse Bold";
-  src: url("/assets/Norse-Bold.otf");
+  src: url("Norse-Bold.otf");
 }
 
 * {
@@ -22,7 +22,7 @@
   width: 35vw;
   height: 100vh;
 
-  background-image: url("/assets/background.jpg");
+  background-image: url("background.jpg");
   
   position: relative;
 
