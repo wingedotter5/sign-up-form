@@ -157,3 +157,20 @@ input:focus {
   color: red;
   visibility: visible !important;
 }
+
+@media screen and (max-width: 640px) {
+  .background {
+    display: none;
+  }
+
+  form {
+    top: 0;
+    width: 100vw;
+  }
+
+  .form-row {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
